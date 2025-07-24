@@ -8,6 +8,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: webapp  # 👈 tells all steps to run inside /webapp
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -18,12 +22,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
       - name: Run ESLint Security Scan
-        run: |
-          npx eslint app.js
+        run: npx eslint app.js
 
       - name: Start the web server in background
         run: |
