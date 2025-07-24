@@ -335,3 +335,73 @@
 2025.07.24 06:30:11 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
 2025.07.24 06:30:11 WARN  web[][o.a.c.l.WebappClassLoaderBase] The web application [ROOT] appears to have started a thread named [OkHttp TaskRunner] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:\n java.base/java.lang.Object.wait0(Native Method)\n java.base/java.lang.Object.wait(Unknown Source)\n java.base/java.lang.Object.wait(Unknown Source)\n okhttp3.internal.concurrent.TaskRunner$RealBackend.coordinatorWait(TaskRunner.kt:294)\n okhttp3.internal.concurrent.TaskRunner.awaitTaskToRun(TaskRunner.kt:218)\n okhttp3.internal.concurrent.TaskRunner$runnable$1.run(TaskRunner.kt:59)\n java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\n java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\n java.base/java.lang.Thread.run(Unknown Source)
 2025.07.24 06:30:11 INFO  web[][o.s.s.app.WebServer] Web Server stopped
+2025.07.24 06:30:44 INFO  web[][o.s.p.ProcessEntryPoint] Starting Web Server
+2025.07.24 06:30:44 INFO  web[][o.s.s.a.TomcatHttpConnectorFactory] Starting Tomcat on port 9000
+2025.07.24 06:30:45 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 25.7.0.110598 / cc952df44775734b110646001985b9f87752b7e0
+2025.07.24 06:30:47 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2025.07.24 06:30:47 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /opt/sonarqube/data
+2025.07.24 06:30:47 INFO  web[][o.s.d.DefaultDatabase] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2025.07.24 06:30:47 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+2025.07.24 06:30:47 INFO  web[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn2: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
+2025.07.24 06:30:47 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+2025.07.24 06:30:47 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2025.07.24 06:30:48 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy C# Code Quality and Security / 10.11.0.117924 / 4889442558447932bbf5d7da6de6f367c391d007
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Clean as You Code / 2.4.0.2018 / c2f7910f6ecac6faa73001eeac4bd79a2db98cd3
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Flex Code Quality and Security / 2.14.0.5032 / 005476cddc54a18b78eca55d10338702eb31e4b0
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Go Code Quality and Security / 1.25.0.3305 / d0ee49fba8f9f16125fae98fd980b56912f410b6
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy HTML Code Quality and Security / 3.19.0.5695 / 4d6d79c1783726575bb4d5bd72f4873e46a99e5f
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy IaC Code Quality and Security / 1.47.0.15287 / null
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JaCoCo / 1.3.0.1538 / 74a7798c7cea687c72ed9df40c93eb7ea2a58c49
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Advanced Code Quality Analyzer / 8.16.0.131 / 8ce779aa5e09006f1dc3aeadde6531ef87e807b1
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Code Quality and Security / 8.16.0.39645 / 1b4e94ab595a2c89c14c1a098dffb120cee7e2d5
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JavaScript/TypeScript/CSS Code Quality and Security / 10.23.0.32711 / c26e1021516f10815719b93e648bdf732edda7e7
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Kotlin Code Quality and Security / 3.2.0.7239 / f9d8f13d3da9cd017e0225aff04aaf9a541043f3
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy PHP Code Quality and Security / 3.46.0.13151 / null
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Python Code Quality and Security / 5.5.0.23291 / 1eae161c0d94b3545084cb642663c9a9c12f609c
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Ruby Code Quality and Security / 1.19.0.471 / 415d28ce6fa5adf005ce5eef827cec15af9c14cf
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Rust Code Quality and Security / 1.0.3.786 / null
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Scala Code Quality and Security / 1.19.0.484 / 97a215c0534ecba8b6bc3e32c2589cbd86452170
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Text Code Quality and Security / 2.24.2.6631 / null
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy VB.NET Code Quality and Security / 10.11.0.117924 / 4889442558447932bbf5d7da6de6f367c391d007
+2025.07.24 06:30:48 INFO  web[][o.s.s.p.ServerPluginManager] Deploy XML Code Quality and Security / 2.13.0.5938 / 18b3322855f8543906e10b25f9c57d2f81276c76
+2025.07.24 06:30:52 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2025.07.24 06:30:52 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@334540a0 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2025.07.24 06:30:52 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.NoCacheFilter@2a1e57c6 [pattern=UrlPattern{inclusions=[/api/v2/*], exclusions=[]}]
+2025.07.24 06:30:52 INFO  web[][o.s.s.p.DetectPluginChange] Detect plugin changes
+2025.07.24 06:30:53 INFO  web[][o.s.s.p.DetectPluginChange] No plugin change detected
+2025.07.24 06:30:53 INFO  web[][o.s.s.s.PropertiesDBCleaner] Clean up properties from db
+2025.07.24 06:30:53 INFO  web[][o.h.v.i.util.Version] HV000001: Hibernate Validator 9.0.0.Final
+2025.07.24 06:30:54 INFO  web[][o.s.s.s.LogServerId] Server ID: 147B411E-AZg7G_iPgbCwC1oYV6re
+2025.07.24 06:30:54 INFO  web[][o.o.c.c.InitializationService] Initializing OpenSAML using the Java Services API
+2025.07.24 06:30:54 INFO  web[][o.o.x.a.AlgorithmRegistry] Algorithm failed runtime support check, will not be usable: http://www.w3.org/2001/04/xmlenc#ripemd160
+2025.07.24 06:30:54 INFO  web[][o.o.x.a.AlgorithmRegistry] Algorithm failed runtime support check, will not be usable: http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160
+2025.07.24 06:30:54 INFO  web[][o.o.x.a.AlgorithmRegistry] Algorithm failed runtime support check, will not be usable: http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160
+2025.07.24 06:30:54 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to an HTTPS URL.
+2025.07.24 06:30:54 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://downloads.sonarsource.com/sonarqube/update/update-center.properties
+2025.07.24 06:30:55 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired session tokens has removed 0 elements
+2025.07.24 06:30:55 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired SAML message ids has removed 0 elements
+2025.07.24 06:30:55 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2025.07.24 06:30:55 INFO  web[][o.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+2025.07.24 06:30:55 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2025.07.24 06:30:55 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2025.07.24 06:30:55 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.SonarQubeIdeConnectionFilter@2141f01f [pattern=UrlPattern{inclusions=[/api/*], exclusions=[/api/v2/*]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@2bca1cd3 [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/authentication/login.*, ...]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.NoCacheFilter@6d33450c [pattern=UrlPattern{inclusions=[/api/v2/*], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceReroutingFilter@3e731d5d [pattern=UrlPattern{inclusions=[/api/components/update_key, ...], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.DefaultAdminCredentialsVerifierFilter@101cc384 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@6b4b69d0 [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.SamlValidationRedirectionFilter@1ca75a90 [pattern=UrlPattern{inclusions=[/oauth2/callback/saml], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@3a1825ac [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ResetPasswordFilter@4ceed188 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@40ed3f58 [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@3cfed7cb [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@c150c89 [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.saml.ws.ValidationInitAction@31ef87b3 [pattern=UrlPattern{inclusions=[/saml/validation_init], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.saml.ws.ValidationAction@6469f44 [pattern=UrlPattern{inclusions=[/saml/validation], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.user.ws.ChangePasswordAction@7cdb342c [pattern=UrlPattern{inclusions=[/api/users/change_password], exclusions=[]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.plugins.PluginsRiskConsentFilter@5a0e92fd [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2025.07.24 06:30:55 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2025.07.24 06:30:56 INFO  web[][o.s.s.p.Platform] Web Server is operational
