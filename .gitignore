@@ -1,0 +1,11 @@
+# Ignore auto-generated service data
+gitea/data/
+sonarqube/data/
+node_modules/
+
+# Ignore logs
+*.log
+
+# Optional: Ignore sensitive or bulky config
+*.pem
+*.db
