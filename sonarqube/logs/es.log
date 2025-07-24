@@ -1,0 +1,86 @@
+2025.07.24 06:25:32 INFO  es[][o.e.n.j.JdkVectorLibrary] vec_caps=1
+2025.07.24 06:25:32 INFO  es[][o.e.n.NativeAccess] Using native vector library; to disable start with -Dorg.elasticsearch.nativeaccess.enableVectorLibrary=false
+2025.07.24 06:25:32 INFO  es[][o.e.n.NativeAccess] Using [jdk] native provider and native methods for [Linux]
+2025.07.24 06:25:33 WARN  es[][o.a.l.i.v.VectorizationProvider] Java vector incubator module is not readable. For optimal vector performance, pass --add-modules jdk.incubator.vector to enable Vector API.
+2025.07.24 06:25:33 INFO  es[][o.e.n.Node] version[8.16.3], pid[120], build[tar/2eb78bceb86e182dc8f45ab76a704b1bfd352c9d/2025-01-10T10:08:28.587559883Z], OS[Linux/6.6.87.2-microsoft-standard-WSL2/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.7/21.0.7+6-LTS]
+2025.07.24 06:25:33 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk], using bundled JDK [false]
+2025.07.24 06:25:33 INFO  es[][o.e.n.Node] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --enable-native-access=org.elasticsearch.nativeaccess,org.apache.lucene.core, -XX:ReplayDataFile=logs/replay_pid%p.log, -Des.distribution.type=tar, -XX:+UseG1GC, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=/opt/sonarqube/logs/es_hs_err_pid%p.log, -Xlog:disable, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djna.tmpdir=/opt/sonarqube/temp, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, --module-path=/opt/sonarqube/elasticsearch/lib, --add-modules=jdk.net, --add-modules=ALL-MODULE-PATH, -Djdk.module.main=org.elasticsearch.server]
+2025.07.24 06:25:33 INFO  es[][o.e.n.Node] Default Locale [en_US]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [rest-root]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-core]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-redact]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-security]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-geoip-enterprise-downloader]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-esql-core]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-apm-data]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [old-lucene-versions]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [counted-keyword]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [logsdb]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-inference]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [dot-prefix-validation]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [health-shards-availability]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-otel-data]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [aggregations]
+2025.07.24 06:25:34 INFO  es[][o.e.p.PluginsService] loaded module [apm]
+2025.07.24 06:25:34 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (C:\)]], net usable_space [330.7gb], net total_space [952.7gb], types [9p]
+2025.07.24 06:25:34 INFO  es[][o.e.e.NodeEnvironment] heap size [512mb], compressed ordinary object pointers [true]
+2025.07.24 06:25:34 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [RAf5n3Q4RQG3oIbHyzrfow], cluster name [sonarqube], roles [ml, data_hot, transform, data_content, data_warm, master, remote_cluster_client, data, data_cold, ingest, data_frozen]
+2025.07.24 06:25:36 INFO  es[][o.e.i.r.RecoverySettings] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+2025.07.24 06:25:36 INFO  es[][o.e.f.FeatureService] Registered local node features [desired_node.version_deprecated, features_supported, file_settings, flattened.ignore_above_support, geoip.downloader.database.configuration, get_database_configuration_action.multi_node, health.extended_repository_indicator, knn_retriever_supported, license-trial-independent-version, mapper.boolean_dimension, mapper.flattened.ignore_above_with_arrays_support, mapper.ignore_above_index_level_setting, mapper.index_sorting_on_nested, mapper.keyword_dimension_ignore_above, mapper.keyword_normalizer_synthetic_source, mapper.pass_through_priority, mapper.query_index_mode, mapper.range.null_values_off_by_one_fix, mapper.segment_level_fields_stats, mapper.source.synthetic_source_copy_to_fix, mapper.source.synthetic_source_copy_to_inside_objects_fix, mapper.source.synthetic_source_fallback, mapper.source.synthetic_source_stored_fields_advance_fix, mapper.source.synthetic_source_with_copy_to_and_doc_values_false, mapper.subobjects_auto, mapper.subobjects_auto_fixes, mapper.synthetic_source_keep, mapper.track_ignored_source, mapper.vectors.bbq, mapper.vectors.bit_vectors, mapper.vectors.int4_quantization, put_database_configuration_action.ipinfo, random_reranker_retriever_supported, repositories.supports_usage_stats, rest.capabilities_action, rest.local_only_capabilities, retrievers_supported, routing.boolean_routing_path, routing.multi_value_routing_path, script.hamming, script.term_stats, search.vectors.k_param_supported, security.migration_framework, security.role_mapping_cleanup, security.roles_metadata_flattened, semantic_text.search_inference_id, simulate.component.template.substitutions, simulate.index.template.substitutions, simulate.mapping.validation, simulate.mapping.validation.templates, standard_retriever_supported, stats.include_disk_thresholds, text_similarity_reranker_retriever_composition_supported, text_similarity_reranker_retriever_supported, tsdb.ts_routing_hash_doc_value_parse_byte_ref, unified_highlighter_matched_fields, usage.data_tiers.precalculate_stats]
+2025.07.24 06:25:36 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated default factory retention to [null]
+2025.07.24 06:25:36 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated max factory retention to [null]
+2025.07.24 06:25:36 INFO  es[][o.e.x.s.Security] Security is disabled
+2025.07.24 06:25:36 INFO  es[][o.e.x.a.APMPlugin] APM ingest plugin is enabled
+2025.07.24 06:25:36 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] apm index template registry is enabled
+2025.07.24 06:25:36 INFO  es[][o.e.x.o.OTelPlugin] OTel ingest plugin is enabled
+2025.07.24 06:25:36 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] OpenTelemetry index template registry is enabled
+2025.07.24 06:25:36 INFO  es[][o.e.t.a.APM] Sending apm metrics is disabled
+2025.07.24 06:25:36 INFO  es[][o.e.t.a.APM] Sending apm tracing is disabled
+2025.07.24 06:25:37 INFO  es[][o.e.t.n.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+2025.07.24 06:25:37 INFO  es[][o.e.d.DiscoveryModule] using discovery type [single-node] and seed hosts providers [settings]
+2025.07.24 06:25:37 INFO  es[][o.e.n.Node] initialized
+2025.07.24 06:25:37 INFO  es[][o.e.n.Node] starting ...
+2025.07.24 06:25:37 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:40625}, bound_addresses {127.0.0.1:40625}
+2025.07.24 06:25:37 INFO  es[][o.e.c.c.ClusterBootstrapService] this node has not joined a bootstrapped cluster yet; [cluster.initial_master_nodes] is set to [sonarqube]
+2025.07.24 06:25:37 INFO  es[][o.e.c.c.Coordinator] setting initial configuration to VotingConfiguration{RAf5n3Q4RQG3oIbHyzrfow}
+2025.07.24 06:25:37 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined in term 1)[_FINISH_ELECTION_, {sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}{YyJPnz78RJWT0QFjImL06A}{sonarqube}{127.0.0.1}{127.0.0.1:40625}{cdfhilmrstw}{8.16.3}{7000099-8518000} completing election], term: 1, version: 1, delta: master node changed {previous [], current [{sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}{YyJPnz78RJWT0QFjImL06A}{sonarqube}{127.0.0.1}{127.0.0.1:40625}{cdfhilmrstw}{8.16.3}{7000099-8518000}]}
+2025.07.24 06:25:38 INFO  es[][o.e.c.c.CoordinationState] cluster UUID set to [4JIU55cDSquhkyw-AXjQgQ]
+2025.07.24 06:25:38 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}{YyJPnz78RJWT0QFjImL06A}{sonarqube}{127.0.0.1}{127.0.0.1:40625}{cdfhilmrstw}{8.16.3}{7000099-8518000}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+2025.07.24 06:25:38 INFO  es[][o.e.c.c.NodeJoinExecutor] node-join: [{sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}{YyJPnz78RJWT0QFjImL06A}{sonarqube}{127.0.0.1}{127.0.0.1:40625}{cdfhilmrstw}{8.16.3}{7000099-8518000}] with reason [completing election]
+2025.07.24 06:25:38 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2025.07.24 06:25:38 INFO  es[][o.e.n.Node] started {sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}{YyJPnz78RJWT0QFjImL06A}{sonarqube}{127.0.0.1}{127.0.0.1:40625}{cdfhilmrstw}{8.16.3}{7000099-8518000}{xpack.installed=true, rack_id=sonarqube}
+2025.07.24 06:25:38 INFO  es[][o.e.c.f.AbstractFileWatchingService] starting file watcher ...
+2025.07.24 06:25:38 INFO  es[][o.e.c.f.AbstractFileWatchingService] file settings service up and running [tid=54]
+2025.07.24 06:25:38 INFO  es[][o.e.g.GatewayService] recovered [0] indices into cluster_state
+2025.07.24 06:25:38 INFO  es[][o.e.r.s.FileSettingsService] setting file [/opt/sonarqube/temp/conf/es/operator/settings.json] not found, initializing [file_settings] as empty
+2025.07.24 06:25:38 INFO  es[][o.e.h.n.s.HealthNodeTaskExecutor] Node [{sonarqube}{RAf5n3Q4RQG3oIbHyzrfow}] is selected as the current health node.
+2025.07.24 06:25:38 INFO  es[][o.e.l.ClusterStateLicenseService] license [19c8d084-80e0-455b-8f33-c200a9ad8998] mode [basic] - valid
+2025.07.24 06:25:46 INFO  es[][o.e.c.m.MetadataCreateIndexService] [metadatas] creating index, cause [api], templates [], shards [1]/[0]
+2025.07.24 06:25:47 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[metadatas][0]]])." previous.health="YELLOW" reason="shards started [[metadatas][0]]"
+2025.07.24 06:25:47 INFO  es[][o.e.c.m.MetadataMappingService] [metadatas/XSo-Wb_uRjyw8qr6eFA76w] create_mapping
+2025.07.24 06:25:48 INFO  es[][o.e.c.m.MetadataCreateIndexService] [components] creating index, cause [api], templates [], shards [5]/[0]
+2025.07.24 06:25:49 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[components][4]]])." previous.health="YELLOW" reason="shards started [[components][4]]"
+2025.07.24 06:25:49 INFO  es[][o.e.c.m.MetadataMappingService] [components/t5tdq4X4SNKotpYVI3bRlw] create_mapping
+2025.07.24 06:25:50 INFO  es[][o.e.c.m.MetadataCreateIndexService] [projectmeasures] creating index, cause [api], templates [], shards [5]/[0]
+2025.07.24 06:25:51 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[projectmeasures][4]]])." previous.health="YELLOW" reason="shards started [[projectmeasures][4]]"
+2025.07.24 06:25:51 INFO  es[][o.e.c.m.MetadataMappingService] [projectmeasures/3O875NY8TvKwCGB7giPEeQ] create_mapping
+2025.07.24 06:25:52 INFO  es[][o.e.c.m.MetadataCreateIndexService] [rules] creating index, cause [api], templates [], shards [2]/[0]
+2025.07.24 06:25:53 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[rules][1]]])." previous.health="YELLOW" reason="shards started [[rules][1]]"
+2025.07.24 06:25:53 INFO  es[][o.e.c.m.MetadataMappingService] [rules/3batLUJrRR6GU2Xhtzh5sw] create_mapping
+2025.07.24 06:25:53 INFO  es[][o.e.c.m.MetadataCreateIndexService] [issues] creating index, cause [api], templates [], shards [5]/[0]
+2025.07.24 06:25:55 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[issues][4]]])." previous.health="YELLOW" reason="shards started [[issues][4]]"
+2025.07.24 06:25:55 INFO  es[][o.e.c.m.MetadataMappingService] [issues/skHvGbTPSR-tp9SG0YGSxw] create_mapping
+2025.07.24 06:25:55 INFO  es[][o.e.c.m.MetadataCreateIndexService] [views] creating index, cause [api], templates [], shards [5]/[0]
+2025.07.24 06:25:56 INFO  es[][o.e.c.r.a.AllocationService] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[views][4]]])." previous.health="YELLOW" reason="shards started [[views][4]]"
+2025.07.24 06:25:57 INFO  es[][o.e.c.m.MetadataMappingService] [views/9lb_APepTnG6UQL2b62TJQ] create_mapping
+2025.07.24 06:30:12 INFO  es[][o.e.n.Node] stopping ...
+2025.07.24 06:30:12 INFO  es[][o.e.c.f.AbstractFileWatchingService] shutting down watcher thread
+2025.07.24 06:30:12 INFO  es[][o.e.c.f.AbstractFileWatchingService] watcher service stopped
+2025.07.24 06:30:12 INFO  es[][o.e.n.Node] stopped
+2025.07.24 06:30:12 INFO  es[][o.e.n.Node] closing ...
+2025.07.24 06:30:12 INFO  es[][o.e.n.Node] closed

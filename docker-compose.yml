@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: ./webapp
+    ports:
+      - "80:3000"
+    restart: always
+
+  gitea:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - ./gitea/data:/data
+    ports:
+      - "3001:3000"
+      - "222:22"
+    restart: always
+
+  sonarqube:
+    image: sonarqube:community
+    container_name: sonarqube
+    ports:
+      - "9000:9000"
+    environment:
+      SONARQUBE_JDBC_USERNAME: "AARON TAN JUN JIE"
+      SONARQUBE_JDBC_PASSWORD: "1923756@sit.singaporetech.edu.sg"
+    volumes:
+      - ./sonarqube/data:/opt/sonarqube/data
+      - ./sonarqube/logs:/opt/sonarqube/logs
+      - ./sonarqube/extensions:/opt/sonarqube/extensions
+    restart: always
