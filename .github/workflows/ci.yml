@@ -18,15 +18,12 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        working-directory: ./webapp
         run: npm install
 
       - name: Run ESLint Security Scan
-        working-directory: ./webapp
         run: npx eslint app.js
 
       - name: Start the web server in background
-        working-directory: ./webapp
         run: |
           node app.js &
           sleep 3
