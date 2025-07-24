@@ -8,10 +8,6 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: webapp  # 👈 tells all steps to run inside /webapp
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -22,16 +18,18 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
+        working-directory: ./webapp
         run: npm install
 
       - name: Run ESLint Security Scan
+        working-directory: ./webapp
         run: npx eslint app.js
 
       - name: Start the web server in background
+        working-directory: ./webapp
         run: |
           node app.js &
           sleep 3
 
       - name: Basic HTTP UI Test
-        run: |
-          curl --fail http://localhost:3000 || (echo "Web app failed to start" && exit 1)
+        run: curl --fail http://localhost:3000
